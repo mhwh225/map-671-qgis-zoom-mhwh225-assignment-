@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>MAP-671 3.1-3.2 zoom</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #f5f5f5;
+			font-family: "Noto Sans", sans-serif;
+			color: #3d3d3d;
+		}
+
+		section {
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: Lora, serif;
+			letter-spacing: .04em;
+		}
+
+		h2 {
+			font-family: Lora, serif;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #005daa;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+
+		<h1>Question :Which parts of the Country are most likely to be affected by fire?</h1>
+		<!-- Uncomment the iframe tag (inline web page frame) to show your slippy map, if you choose to make a slippy map -->
+		<iframe src="leaflet.html" width="100%" height="640px"></iframe>
+
+		<h2>Geoprocessing Analysis
+			Firstly I Took the fire point data from the earlier activity and joined it with a US county map. After that I sorted the counties by number of fires that occured it them. This provided the map shown above where we can see the concentration of fires in california and arizona. </h2>
+
+		<p></p>
+
+		<h3>Map prepared by Miles Whitlock 2024 for the University of Kentucky MAP-671 Course using QGIS 3.34.2. Fire data from Short, Karen C. 2022. Spatial wildfire occurrence data for the United States, 1992-2020 [FPA_FOD_20221014]. 6th Edition. Fort Collins, CO: Forest Service Research Data Archive. https://doi.org/10.2737/RDS-2013-0009.6 https://www.fs.usda.gov/rds/archive/catalog/RDS-2013-0009.6.
+			Projected Coordinate System used EPSG:4269 - NAD83
+			Map Scale 1:6930217</h3>
+		<p>Create on QGIS version # using OpenStreetMap data harvested from the QuickOSM plugin. &copy; 2022 Openstreet map contributors.</p>
+
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+			<li>See my projects on GitHub:
+				<a href="">mhwh225</a>
+			</li>
+		</ul>
+	</section>
+
+
+</body>
+
+</html>
